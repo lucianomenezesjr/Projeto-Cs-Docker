@@ -1,0 +1,17 @@
+Criando aplicação em aspnet
+
+dotnet new webapi --use-controllers -o "Nome_Do_Projeto"
+
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+dotnet aspnet-codegenerator controller -name UsuarioController -async -api -m Usuario -dc Usuario.Data.ApplicationDBContext -outDir Controllers --databaseProvider sqlite
+
+dotnet ef migrations add InitialCreate
+
+dotnet ef database update

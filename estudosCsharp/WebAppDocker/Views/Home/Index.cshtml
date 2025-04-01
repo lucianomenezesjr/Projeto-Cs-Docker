@@ -1,0 +1,45 @@
+﻿@model List<WebAppDocker.Models.Produto>
+
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo</h1>
+    <h2>Produtos em Destaque</h2>
+</div>
+
+<div class="row mt-4">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var produto in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@produto.Nome</h5>
+                        <p class="card-text text-success">@produto.Preco.ToString("C")</p>
+                        <p class="card-text">@produto.Descricao</p>
+                        <h1>@produto.Id</h1>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a asp-controller="Produtos" asp-action="Details" asp-route-id="@produto.Id" 
+                           class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12">
+            <div class="alert alert-info">Nenhum produto em destaque no momento</div>
+        </div>
+    }
+</div>
+
+<div class="text-center mt-4">
+    <a asp-controller="Produtos" asp-action="Index" class="btn btn-lg btn-outline-primary">
+        Ver Todos os Produtos
+    </a>
+</div>
