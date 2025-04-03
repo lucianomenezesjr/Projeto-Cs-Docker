@@ -390,3 +390,4 @@ C:\Users\lucia\OneDrive\Documentos\Projeto-Cs-Docker\estudosCsharp\WebAppDocker\
 C:\Users\lucia\OneDrive\Documentos\Projeto-Cs-Docker\estudosCsharp\WebAppDocker\obj\Debug\net9.0\WebAppDocker.pdb
 C:\Users\lucia\OneDrive\Documentos\Projeto-Cs-Docker\estudosCsharp\WebAppDocker\obj\Debug\net9.0\WebAppDocker.genruntimeconfig.cache
 C:\Users\lucia\OneDrive\Documentos\Projeto-Cs-Docker\estudosCsharp\WebAppDocker\obj\Debug\net9.0\ref\WebAppDocker.dll
+C:\Users\lucia\OneDrive\Documentos\Projeto-Cs-Docker\estudosCsharp\WebAppDocker\obj\Debug\net9.0\WebAppDocker.sourcelink.json
